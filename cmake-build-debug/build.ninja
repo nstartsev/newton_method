@@ -84,6 +84,12 @@ build CMakeFiles/SolveHessian.dir/optimisation.cpp.o: CXX_COMPILER__SolveHessian
   OBJECT_DIR = CMakeFiles/SolveHessian.dir
   OBJECT_FILE_DIR = CMakeFiles/SolveHessian.dir
 
+build CMakeFiles/SolveHessian.dir/create_hessian.cpp.o: CXX_COMPILER__SolveHessian_Debug /Users/mak/CLionProjects/SolveHessian/create_hessian.cpp || cmake_object_order_depends_target_SolveHessian
+  DEP_FILE = CMakeFiles/SolveHessian.dir/create_hessian.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/SolveHessian.dir
+  OBJECT_FILE_DIR = CMakeFiles/SolveHessian.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SolveHessian
@@ -92,7 +98,7 @@ build CMakeFiles/SolveHessian.dir/optimisation.cpp.o: CXX_COMPILER__SolveHessian
 #############################################
 # Link the executable SolveHessian
 
-build SolveHessian: CXX_EXECUTABLE_LINKER__SolveHessian_Debug CMakeFiles/SolveHessian.dir/main.cpp.o CMakeFiles/SolveHessian.dir/optimisation.cpp.o
+build SolveHessian: CXX_EXECUTABLE_LINKER__SolveHessian_Debug CMakeFiles/SolveHessian.dir/main.cpp.o CMakeFiles/SolveHessian.dir/optimisation.cpp.o CMakeFiles/SolveHessian.dir/create_hessian.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/SolveHessian.dir
   POST_BUILD = :

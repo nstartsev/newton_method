@@ -3,4 +3,4 @@ project(SolveHessian)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SolveHessian main.cpp optimisation.cpp optimisation.h)
+add_executable(SolveHessian main.cpp optimisation.cpp optimisation.h create_hessian.cpp create_hessian.h)
